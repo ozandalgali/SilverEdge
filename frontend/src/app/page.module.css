@@ -7,6 +7,14 @@
   min-height: 100vh;
 }
 
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(1, 5fr);
+  gap: 8px;
+  padding: 30px;
+  justify-content: center;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
@@ -88,6 +96,7 @@
   margin-left: -400px;
 }
 
+
 .center::after {
   background: var(--primary-glow);
   width: 240px;
@@ -102,6 +111,15 @@
   position: absolute;
   filter: blur(45px);
   transform: translateZ(0);
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  padding: 0 10px;  /* Add padding */
 }
 
 .logo {
@@ -227,3 +245,5 @@
     transform: rotate(0deg);
   }
 }
+
+
