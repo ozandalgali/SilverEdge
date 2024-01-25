@@ -54,7 +54,7 @@ for data_point in api_response:
     contract = data_point.contract
     source_list.append(contract)  # Addç the contract to the source list
 print(len(source_list))
-for i in range(10):
+for i in range(5):
     data_points = []  # List to store data points
     for contract in source_list:
         start_time = time.time()  # Start the timer
@@ -81,7 +81,7 @@ for i in range(10):
         except ApiException as e:
             print("Exception when calling FuturesApi->list_futures_candlesticks: %s\n" % e)
         elapsed_time = end_time - start_time  # Calculate the elapsed time
-        print(f"Time taken for {contract} run: {elapsed_time} seconds")
+        print(f"Time taken for {i}th {contract} run: {elapsed_time} seconds")
 
     time.sleep(70)    
     c.executemany('''
