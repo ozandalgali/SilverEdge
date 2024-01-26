@@ -68,8 +68,8 @@ for contract in source_list:
         
     
     # Send a message to the Telegram bot
-        bot_token = "6816817424:AAGwlir2UtcyfdvYZTFjrdjsifjmljNo9NQ"  # Replace with your bot token
-        chat_id = "-1001761277062"  # Replace with your chat ID
+        bot_token = "xx"  # Replace with your bot token
+        chat_id = "xx"  # Replace with your chat ID
         if df.empty:
             category = 'No data'
         else:
